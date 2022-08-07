@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MOHEBAK</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner flex">
+				<img src="img/burger.svg" alt="drop-down menu" class="burger">
+				<nav class="header__nav nav ">
+					<ul class="nav__list flex">
+						<li class="list__item">
+							<a href="#" class="item__link">Упаковка </a>
+						</li>
+						<li class="list__item">
+							<a href="#" class="item__link">Оборудование</a>
+						</li>
+						<li class="list__item">
+							<a href="#" class="item__link">Сервис и запчасти</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="#" class="header__logo">
+					<img src="img/logo.svg" alt="logo MOHEBAK" class="logo">
+				</a>
+				<div class="user__tools">
+					<a href="" class="compare__tool">
+						<img src="img/sort.svg" alt="compare" class="compare">
+					</a>
+					<a href="" class="search__tool">
+						<img src="img/search.svg" alt="search" class="search">
+					</a>
+				</div>
+				<div class="contacts">
+					<a href="tel:+74991361718" class="header__phone-number">+7 (499) 136-17-18</a>
+					<br>
+					<a href="mailto:info@monevac.ru" class="header__email">info@monevac.ru</a>
+				</div>
+				<button class="header__button button">Оставить заявку</button>
+			</div>
+		</div>
+	</header>
+	<section class="crumbs">
+		<div class="container">
+			<div class="crumbs__inner">
+				<a href="#" class="crumb__main">Главная</a>
+				<a href="#footer-contact" class="crumb__contacts">Контакты</a>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<main>
+		<section class="hero">
+			<h1 class="hero__title">Контакты</h1>
+			<div class="container">
+				<div class="hero__inner">
+					<div class="hero__info">
+						<h2 class="hero__number">8 (903) 467 98 51</h2>
+						<p class="hero__email">info@monevac.ru</p>
+						<p class="hero__text text-1">Полное наименование: <br>
+							Общество с ограниченной ответственностью «МОНЕВАК»
+							Сокращенное наименование: ООО «МОНЕВАК»</p>
+						<p class="hero__text text-2">ИНН: 3448050610
+							КПП: 344801001
+							ОКПО: 67354285
+							ОКАТО: 18401000000
+							ОГРН: 1103461002480
+							Код по ОКВЭД: 51.70
+						</p>
+						<p class="hero__text text-3">Банк: Филиала &laquo;Ростовский&raquo; ОАО &laquo;Альфа-Банк&raquo;
+							г&nbsp;Ростов на&nbsp;Дону
+							БИК: 046015207 <br>
+							к/с: 30101810500000000207 <br>
+							р/с: 40702810926090000003
+						</p>
+						<p class="hero__text text-4">
+							Юридический адрес: 400080, Волгоградская обл.&nbsp;г. Волгоград ул. Командира Рудь,14А, офис 13
+							<br>
+							Почтовый адрес: 400080, Волгоградская обл.&nbsp;г. Волгоград <br> ул. Командира Рудь, 14А,
+							офис&nbsp;13
+						</p>
+					</div>
+					<div class="hero__form">
+						<div class="topic__text">Остались вопросы?</div>
+						<div class="hero__form-inner">
+							<form action="#">
+								<div class="user__contacts">
+									<div class="input-box">
+										<input class="user__input user-width" type="text" name="" id="" placeholder="Ваше имя">
+									</div>
+									<div class="input-box">
+										<input class="user__input user-width" type="tel" name="" id="" placeholder="Ваш телефон" maxlength="11">
+									</div>
+								</div>
+								<div class="input-box message-box">
+									<textarea class="user__message user__input" 
+										placeholder="Ваше сообщение"><span>Ваше сообщение</span></textarea>
+								</div>
+								<div class="form__item">
+									<div class="checkbox">
+										<input id="form-agreement" type="checkbox" name="agreement" class="checkbox__input">
+										<label for="form-agreement" class="checkbox__label"><span class="label__text">Я подтверждаю свое
+												согласие с политикой в отношении
+												<a class="agreement__link" href="#">обработкиперсональных данных</span></a></label>
+									</div>
+								</div>
+							</form>
+						</div>
+
+						<button class="form__button button">Задать вопрос</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<div id="map-test" class="map"></div>
+
+</body>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU"></script>
+<script src="js/script.js"></script>
+
+</html>

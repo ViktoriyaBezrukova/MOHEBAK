@@ -1,0 +1,311 @@
+.map {
+	width: 100%;
+	height: 599px;
+	background-color: rgb(245, 211, 211);
+}
+
+[class*="ground-pane"] {
+	filter: grayscale(1);
+}
+
+
+body {
+	color: #262633;
+	font-family: 'GolosText', sans-serif;
+	font-style: normal;
+}
+
+.flex {
+	display: flex;
+}
+
+.button {
+	font-family: 'RoadRadio', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	width: 190px;
+	height: 52px;
+	padding: 0 10px;
+	border-radius: 14px;
+	font-size: 14px;
+	line-height: 14px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	background-color: #BF2738;
+}
+.button:hover{
+	background: #CC2A3C;
+}
+.button:active{
+	background: #991F2D;
+}
+.burger {
+	margin-right: 59px;
+}
+
+.nav__list {
+	margin-right: 111px;
+}
+
+.container {
+	max-width: 1320px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.header__logo {
+	margin-right: 100px;
+}
+
+.header__inner {
+	align-items: center;
+
+	padding: 14px 0;
+}
+
+.list__item:not(:last-child) {
+	margin-right: 46px;
+}
+
+.compare__tool:not(:last-child) {
+	margin-right: 23px;
+}
+
+.header__phone-number {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	margin-bottom: 6px;
+}
+
+.user__tools {
+	margin-right: 58px;
+}
+
+.contacts {
+	margin-right: 58px;
+}
+
+.header__email {
+	font-family: 'Graphik LC Web';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 120%;
+	color: #797986
+}
+
+
+
+/* ---------------------CRUMBS---------------------- */
+.crumbs {
+	background: #F5F5F5;
+}
+
+.crumbs__inner {
+	text-align: center;
+	padding: 23px 0;
+}
+
+hr {
+	height: 1px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.crumb__main {
+	margin-right: 24px;
+	position: relative;
+}
+
+.crumb__main::after {
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	background: #797986;
+	border-radius: 50%;
+	right: -14px;
+	bottom: 6px;
+}
+
+/* --------------------------------HERO-------------------------- */
+.hero {
+	padding-bottom: 66px;
+	background: #ffffff;
+}
+
+.hero__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero__title {
+	text-align: center;
+	font-family: 'RoadRadio', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 110%;
+	background: #F5F5F5;
+	padding-top: 24px;
+	padding-bottom: 44px;
+	margin-bottom: 92px;
+}
+
+.hero__phone-number {
+	font-family: 'RoadRadio', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 110%;
+}
+
+.hero__email {
+	display: block;
+	font-size: 25px;
+	line-height: 30px;
+	color: #BF2738;
+}
+
+.hero__info {
+	max-width: 607px;
+}
+
+.hero__text {
+	font-family: 'GolosText', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 150%;
+	color: #808080;
+}
+
+.text-1 {
+	width: 500px;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 110%;
+	color: #262633;
+}
+
+.text-2 {
+	width: 150px;
+}
+
+.text-3 {
+	width: 430px;
+}
+
+.text-4 {
+	width: 410px;
+}
+
+.hero__text:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.hero__number {
+	font-family: 'RoadRadio', sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 110%;
+}
+
+.hero__email {
+	margin-bottom: 20px;
+}
+
+/* ----------------------FORM----------------------- */
+.user__contacts {
+	display: flex;
+	margin-bottom: 28px;
+}
+
+.hero__form-inner {
+	display: flex;
+}
+
+.topic__text {
+	font-family: 'RoadRadio';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 110%;
+	margin-bottom: 20px;
+}
+.user-width{
+	width: 300px;
+}
+.user__input {
+	background: #F5F5F5;
+	border-radius: 14px;
+	font-size: 16px;
+	line-height: 150%;
+	padding: 17px 20px 11px 20px;
+	color: #797986;
+}
+
+.input-box:not(:last-child) {
+	margin-right: 30px;
+}
+
+.user__message {
+	width: 630px;
+	height: 116px;
+	resize: none;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.label__text {}
+
+.agreement__link {
+	color: #262633;
+}
+
+.checkbox {
+
+}
+.checkbox__input {
+	display: none;
+}
+.checkbox__input:checked + .checkbox__label::before{
+	background-color: #BF2738;
+}
+.checkbox__input:checked + .checkbox__label::after{
+	opacity: 1;
+}
+.checkbox__label {
+	font-size: 13px;
+	line-height: 120%;
+	color: #808080;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+	display: inline-flex;
+	margin-bottom: 30px;
+}
+
+.checkbox__label::before {
+	content: '';
+	align-self: flex-start;
+	flex: 0 0 20px;
+	height: 20px;
+	background-color: #F5F5F5;
+	border-radius: 4px;
+	margin-right: 16px;
+}
+.checkbox__label::after{
+	content: '';
+	background-image: url(../img/arrow.svg) ;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 4px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #BF2738;
+	opacity: 0;
+}
