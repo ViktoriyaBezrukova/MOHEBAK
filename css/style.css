@@ -8,7 +8,6 @@
 	filter: grayscale(1);
 }
 
-
 body {
 	color: #262633;
 	font-family: 'GolosText', sans-serif;
@@ -17,6 +16,10 @@ body {
 
 .flex {
 	display: flex;
+}
+
+.wrap {
+	flex-wrap: wrap;
 }
 
 .button {
@@ -33,12 +36,15 @@ body {
 	text-transform: uppercase;
 	background-color: #BF2738;
 }
-.button:hover{
+
+.button:hover {
 	background: #CC2A3C;
 }
-.button:active{
+
+.button:active {
 	background: #991F2D;
 }
+
 .burger {
 	margin-right: 59px;
 }
@@ -160,7 +166,7 @@ hr {
 	line-height: 110%;
 }
 
-.hero__email {
+.email {
 	display: block;
 	font-size: 25px;
 	line-height: 30px;
@@ -233,9 +239,11 @@ hr {
 	line-height: 110%;
 	margin-bottom: 20px;
 }
-.user-width{
+
+.user-width {
 	width: 300px;
 }
+
 .user__input {
 	background: #F5F5F5;
 	border-radius: 14px;
@@ -263,18 +271,20 @@ hr {
 	color: #262633;
 }
 
-.checkbox {
+.checkbox {}
 
-}
 .checkbox__input {
 	display: none;
 }
-.checkbox__input:checked + .checkbox__label::before{
+
+.checkbox__input:checked+.checkbox__label::before {
 	background-color: #BF2738;
 }
-.checkbox__input:checked + .checkbox__label::after{
+
+.checkbox__input:checked+.checkbox__label::after {
 	opacity: 1;
 }
+
 .checkbox__label {
 	font-size: 13px;
 	line-height: 120%;
@@ -295,9 +305,10 @@ hr {
 	border-radius: 4px;
 	margin-right: 16px;
 }
-.checkbox__label::after{
+
+.checkbox__label::after {
 	content: '';
-	background-image: url(../img/arrow.svg) ;
+	background-image: url(../img/arrow.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: 4px;
@@ -308,4 +319,175 @@ hr {
 	left: 0;
 	background-color: #BF2738;
 	opacity: 0;
+}
+
+/* -------------------------------------------------------ADDRESS--------------------------- */
+.address__inner {
+	padding-top: 81px;
+	padding-bottom: 100px;
+}
+
+.address__catalog {}
+
+.catalog__card {
+	padding: 33px 16px 40px 22px;
+	background: #F5F5F5;
+	border-radius: 20px;
+	color: #262633;
+}
+
+.card__title {
+	font-family: 'RoadRadio';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 110%;
+	margin-bottom: 15px;
+}
+
+.card__phone-number {
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 150%;
+	margin-bottom: 10px;
+}
+
+.card__address {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+	color: #797986;
+	margin-bottom: 5px;
+}
+
+.card__route {}
+
+.link__route {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+	color: #BF2738;
+}
+
+.work__time {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+}
+
+.address__catalog-up {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: 300px 300px 300px 300px;
+	margin-bottom: 30px;
+}
+
+.address__catalog-down {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: 300px 300px auto;
+}
+
+/* ---------------------------------FOOTER------------------------ */
+.footer {
+	background-color: #222225;
+	padding-top: 63px;
+	padding-bottom: 31px;
+}
+
+
+.footer__nav {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 140%;
+	color: #FFFFFF;
+	margin-bottom: 69px;
+}
+
+.footer__nav1 {
+	color: #797986;
+	margin-bottom: 43px;
+}
+
+.footer__rights {
+	font-family: 'Akzidenz-Grotesk Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 110%;
+	color: #797986;
+
+}
+
+.footer__left {
+	max-width: 50%;
+}
+
+.footer__button {
+	border: 2px solid #494950;
+	border-radius: 14px;
+	background-color: #2A2A2E;
+}
+
+.list__item-footer:not(:last-child) {
+	margin-bottom: 23px;
+}
+
+.list__item-footer1 {
+	margin-right: 25px;
+	margin-bottom: 8px;
+}
+
+.item__link-footer1:hover {
+	color: #ffffff;
+}
+
+.footer__right-telephone {
+	display: flex;
+}
+
+.telephone__number {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 130%;
+	color: #FFFFFF;
+	margin-right: 61px;
+}
+
+.footer__right-telephone {
+	margin-bottom: 20px;
+}
+
+.footer__email {
+	margin-bottom: 143px;
+}
+
+.footer__adress {
+	font-family: 'Akzidenz-Grotesk Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	color: #FFFFFF;
+	margin-bottom: 48px;
+}
+.footer__rights{
+	display: inline;
+	margin-right: 4px;
+	position: relative;
+}
+.footer__rights1::before{
+	content: '';
+	background-color: #797986;
+	position: absolute;
+	width: 1px;
+	height: 13px;
+    bottom: 0px;
+    right: -4px;
+}
+.footer__descr{
+	color: #797986;
+}
+.footer__descr span{
+	color: #EAEAEA;
 }
