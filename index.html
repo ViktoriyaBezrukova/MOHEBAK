@@ -15,7 +15,10 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__inner flex">
-				<img src="img/burger.svg" alt="drop-down menu" class="burger">
+				<div class="burger">
+					<span class="burger1"></span>
+					<span class="burger2"></span>
+				</div>
 				<nav class="header__nav nav ">
 					<ul class="nav__list flex">
 						<li class="list__item">
@@ -29,15 +32,23 @@
 						</li>
 					</ul>
 				</nav>
-				<a href="#" class="header__logo">
-					<img src="img/logo.svg" alt="logo MOHEBAK" class="logo">
+				<a href="#" class="header__logo logo">
+					<img src="img/logo.svg" alt="logo MOHEBAK" class="logo__img">
 				</a>
+				<a href="" class="tablet__logo">
+					<img src="img/tablet-logo.svg" alt="logo" class="tablet__logo-img">
+				</a>
+				
 				<div class="user__tools">
 					<a href="" class="compare__tool">
-						<img src="img/sort.svg" alt="compare" class="compare">
+						<svg class="compare" width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M6 0C6.55228 0 7 0.447715 7 1V15C7 15.5523 6.55228 16 6 16C5.44772 16 5 15.5523 5 15V1C5 0.447715 5.44772 0 6 0ZM1 7C1.55228 7 2 7.44772 2 8L2 15C2 15.5523 1.55229 16 1 16C0.447715 16 0 15.5523 0 15V8C0 7.44772 0.447715 7 1 7ZM12 6C12 5.44772 11.5523 5 11 5C10.4477 5 10 5.44772 10 6V15C10 15.5523 10.4477 16 11 16C11.5523 16 12 15.5523 12 15V6Z" fill="#C9C9CF"/>
+							</svg>
 					</a>
 					<a href="" class="search__tool">
-						<img src="img/search.svg" alt="search" class="search">
+						<svg class="search" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M3 8.5C3 4.91015 5.91015 2 9.5 2C13.0899 2 16 4.91015 16 8.5C16 12.0899 13.0899 15 9.5 15C5.91015 15 3 12.0899 3 8.5ZM9.5 0C4.80558 0 1 3.80558 1 8.5C1 10.6524 1.79999 12.6179 3.11886 14.1154C3.03248 14.161 2.95137 14.2202 2.87868 14.2929L0.292893 16.8787C-0.0976311 17.2692 -0.0976311 17.9024 0.292893 18.2929C0.683417 18.6834 1.31658 18.6834 1.70711 18.2929L4.29289 15.7071C4.38897 15.611 4.46141 15.5003 4.51022 15.382C5.91149 16.3998 7.63565 17 9.5 17C14.1944 17 18 13.1944 18 8.5C18 3.80558 14.1944 0 9.5 0Z" fill="#C9C9CF"/>
+							</svg>
 					</a>
 				</div>
 				<div class="contacts">
@@ -92,14 +103,15 @@
 					<div class="hero__form">
 						<div class="topic__text">Остались вопросы?</div>
 						<div class="hero__form-inner">
-							<form action="#">
+							<form action="#" id="form" name="form">
 								<div class="user__contacts">
 									<div class="input-box">
-										<input class="user__input user-width" type="text" name="" id="" placeholder="Ваше имя">
+										<input class="user__input user-width" type="text" name="name" id="name"
+											data-reg="^[а-яА-ЯёЁa]+$" placeholder="Ваше имя">
 									</div>
 									<div class="input-box">
-										<input class="user__input user-width" type="tel" name="" id="" placeholder="Ваш телефон"
-											maxlength="11">
+										<input class="user__input user-width" type="tel" name="phone" id="phone"
+											data-reg="^((\+7|7|8)+([0-9]){10})$" placeholder="Ваш телефон">
 									</div>
 								</div>
 								<div class="input-box message-box">
@@ -111,26 +123,27 @@
 										<label for="form-agreement" class="checkbox__label"><span class="label__text">Я
 												подтверждаю свое
 												согласие с политикой в отношении
-												<a class="agreement__link" href="#">обработкиперсональных данных</span></a></label>
+												<a class="agreement__link" href="#">обработки персональных данных</span></a></label>
 									</div>
-								</div>
+								</div class="form__button">
+								<input type="submit" value="Задать вопрос" class="input__button button" id="button" name="button"></input>
 							</form>
 						</div>
 
-						<button class="form__button button">Задать вопрос</button>
+
 					</div>
 				</div>
 			</div>
 		</section>
-	<section class="address">
-		<div id="map-test" class="map"></div>
+		<section class="address">
+			<div id="map-test" class="map"></div>
 			<div class="container">
 				<div class="address__inner">
 					<div class="address__catalog-up">
 						<div class="catalog__card">
 							<h4 class="card__title">Москва</h4>
 							<div class="card__number">
-								<a href="tel:+74991361718" class="card__phone-number">+7 (499) 136-17-18</a> 
+								<a href="tel:+74991361718" class="card__phone-number">+7 (499) 136-17-18</a>
 								<a href="tel:+79034679851" class="card__phone-number">+7 (903) 467-98-51</a>
 							</div>
 							<p class="card__address">115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро
@@ -143,7 +156,7 @@
 						<div class="catalog__card">
 							<h4 class="card__title">Волгоград</h4>
 							<div class="card__number">
-								<a href="tel:+78442650888" class="card__phone-number">+7 (8442) 65-08-88</a> 
+								<a href="tel:+78442650888" class="card__phone-number">+7 (8442) 65-08-88</a>
 								<a href="tel:+78442650880" class="card__phone-number">+7 (8442) 65-08-80</a>
 							</div>
 							<p class="card__address">400080, ул. Командира Рудь, 14А</p>
@@ -155,7 +168,7 @@
 						<div class="catalog__card">
 							<h4 class="card__title">КРАСНОДАР</h4>
 							<div class="card__number">
-								<a href="tel:78612927188" class="card__phone-number">7 (861) 292-71-88</a> 
+								<a href="tel:78612927188" class="card__phone-number">7 (861) 292-71-88</a>
 								<a href="tel:+79034679851" class="card__phone-number">+7 (903) 467-98-51</a>
 							</div>
 							<p class="card__address">350015, ул. Митрофана Седина, 176</p>
@@ -167,7 +180,7 @@
 						<div class="catalog__card">
 							<h4 class="card__title">Саратов</h4>
 							<div class="card__number">
-								<a href="tel:+79276260050" class="card__phone-number">+7 (927) 626-00-50</a> 
+								<a href="tel:+79276260050" class="card__phone-number">+7 (927) 626-00-50</a>
 								<a href="tel:+79034679851" class="card__phone-number">+7 (903) 467-98-51</a>
 							</div>
 							<p class="card__address">410080, пр-т Строителей, 1</p>
@@ -181,7 +194,7 @@
 						<div class="catalog__card">
 							<h4 class="card__title">воронеж</h4>
 							<div class="card__number">
-								<a href="tel:+74732296378" class="card__phone-number">+7 (473) 229-63-78</a> 
+								<a href="tel:+74732296378" class="card__phone-number">+7 (473) 229-63-78</a>
 								<a href="tel:+79034679851" class="card__phone-number">+7 (903) 467-98-51</a>
 							</div>
 							<p class="card__address">394030, ул. Комиссаржевской, 10</p>
@@ -193,7 +206,7 @@
 						<div class="catalog__card">
 							<h4 class="card__title">ЕРЕВАН</h4>
 							<div class="card__number">
-								<a href="tel:+37491219069" class="card__phone-number">+374 91 21 90 69</a> 
+								<a href="tel:+37491219069" class="card__phone-number">+374 91 21 90 69</a>
 								<a href="tel:+37460509069" class="card__phone-number">+374 60 50 90 69</a>
 							</div>
 							<p class="card__address">Район Аван 4, дом 2</p>
@@ -202,11 +215,13 @@
 							</div>
 							<p class="work__time">Режим работы: c 10:00 до 18:00</p>
 						</div>
-						<div class="catalog__card">
+						<div class="catalog__card catalog__card-l">
 							<h4 class="card__title">НОВОСИБИРСК</h4>
-							<div class="card__number">
-								<a href="tel:+74991361718" class="card__phone-number">+7 (383) 20-62-461;  +7 (383) 20-62-711 +7 (903) 467-98-51 </a> 
-								<p><a href="mailto:+73832062209" class="card__phone-number">Факс: +7 (383) 20-62-209;  +7 (383) 20-62-210</a></p>
+							<div class="card__number1 card__number">
+								<a href="tel:+74991361718" class="card__phone-number">+7 (383) 20-62-461; <br> +7 (383) 20-62-711 <br>+7
+									(903) 467-98-51 </a>
+								<p><a href="mailto:+73832062209" class="card__phone-number">Факс: +7 (383) 20-62-209; +7 (383)
+										20-62-210</a></p>
 							</div>
 							<p class="card__address">115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро
 								"Павелецкая")</p>
@@ -218,80 +233,84 @@
 					</div>
 				</div>
 			</div>
-	</section>
+		</section>
 	</main>
 	<footer class="footer">
-		<div class="container">
-			<div class="footer__inner flex">
-				<div class="footer__left">
-					<nav class="footer__nav nav ">
-						<ul class="nav__list">
-							<li class="list__item-footer">
-								<a href="#" class="item__link">Упаковочное оборудование</a>
-							</li>
-							<li class="list__item-footer">
-								<a href="#" class="item__link">Пленки</a>
-							</li>
-							<li class="list__item-footer">
-								<a href="#" class="item__link">Пакеты</a>
-							</li>
-							<li class="list__item-footer">
-								<a href="#" class="item__link">Прочие материалы</a>
-							</li>
-						</ul>
-					</nav>
-					<nav class="footer__nav1 nav ">
-						<ul class="nav__list flex wrap">
-							<li class="list__item-footer1">
-								<a href="#" class="item__link-footer1">О Компании</a>
-							</li>
-							<li class="list__item-footer1">
-								<a href="#" class="item__link-footer1"> Партнеры </a>
-							</li>
-							<li class="list__item-footer1">
-								<a href="#" class="item__link-footer1">Доставка</a>
-							</li>
-							<li class="list__item-footer1">
-								<a href="#" class="item__link-footer1">Оплата</a>
-							</li>
-							<li class="list__item-footer1">
-								<a href="#" class="item__link-footer1">Обмен и возврат</a>
-							</li>
-							<li class="list__item-footer1">
-								<a href="#" class="item__link-footer1">Контакты</a>
-							</li>
-							<li class="list__item-footer1">
-								<a href="#" class="item__link-footer1">Распродажа</a>
-							</li>
-							<li class="list__item-footer1">
-								<a href="#" class="item__link-footer1">Сервиcы</a>
-							</li>
-							<li class="list__item-footer1">
-								<a href="#" class="item__link-footer1">Новости</a>
-							</li>
-						</ul>
-					</nav>
-					<p class="footer__rights footer__rights1">© Моневак 2020</p>
-					<p class="footer__rights">Все права защищены</p>
-				</div>
-				<div class="footer__right">
-					<div class="footer__right-telephone flex">
-						<p><a href="tel:+74991361718" class="telephone__number">+7 (499) 136-17-18</a> <br><a href="tel:+79034679851" class="telephone__number">+7 (903) 467-98-51</a></p>
-						<button class="footer__button button">Обратный звонок</button>
+		<div class="wrapper-bg">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__menu menu">
+						<div class="products">
+							<ul class="products__list">
+								<li class="products__item"><a href="" class="products__link">Упаковочное оборудование</a></li>
+								<li class="products__item"><a href="" class="products__link">Пленки</a></li>
+								<li class="products__item"><a href="" class="products__link">Пакеты</a></li>
+								<li class="products__item"><a href="" class="products__link">Прочие материалы</a></li>
+							</ul>
+						</div>
+						<nav class="footer__navigation navigation">
+							<ul class="navigation__list">
+								<li class="navigation__item">
+									<a href="" class="navigation__link">О Компании</a>
+								</li>
+								<li class="navigation__item">
+									<a href="" class="navigation__link">Партнеры</a>
+								</li>
+								<li class="navigation__item">
+									<a href="" class="navigation__link">Доставка</a>
+								</li>
+								<li class="navigation__item">
+									<a href="" class="navigation__link">Оплата</a>
+								</li>
+								<li class="navigation__item">
+									<a href="" class="navigation__link">Обмен и возврат</a>
+								</li>
+								<li class="navigation__item">
+									<a href="" class="navigation__link">Контакты</a>
+								</li>
+
+								<li class="navigation__item">
+									<a href="" class="navigation__link">Распродажа</a>
+								</li>
+								<li class="navigation__item">
+									<a href="" class="navigation__link">Сервис</a>
+								</li>
+								<li class="navigation__item">
+									<a href="" class="navigation__link">Новости</a>
+								</li>
+							</ul>
+						</nav>
+						
 					</div>
-					<p class="footer__email email">info@monevac.ru</p>
-					<p class="footer__adress">Москва ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6<br>(станция метро "Павелецкая")</p>
-					<p class="footer__descr">Разработка и продвижение сайта - <span>TODO</span></p>
+					<div class="footer__contacts">
+						<div class="footer__components components">
+							<div class="components__tel">
+								<p class="tel__number"><a href="tel:+74991361718" class="tel__number-link">+7 (499)
+										136-17-18</a></p>
+								<p class="tel__number"><a href="tel:+79034679851" class="tel__number-link">+7 (903)
+										467-98-51</a></p>
+							</div>
+							<button  class="footer__button button">Обратный звонок</button>
+						</div>
+						<div class="footer__email">info@monevac.ru</div>
+						<div class="footer__address">Москва ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро
+							"Павелецкая")</div>
+						
+					</div>
 				</div>
-				
+			</div>
+			<div class="container">
+				<div class="footer__copyright">
+					<p class="copyright">© Моневак 2020 | Все права защищены</p>
+					<p class="copyright">Разработка и продвижение сайта - <span>TODO</span></p>
+				</div>
 			</div>
 		</div>
 	</footer>
 
-	
-
 </body>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU"></script>
+<script src="js/form.js"></script>
 <script src="js/script.js"></script>
 
 </html>
